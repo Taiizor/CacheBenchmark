@@ -56,8 +56,8 @@ IterationCount=3  LaunchCount=3  WarmupCount=3
 
 ## Test Configuration
 
-- Each test performs 1000 operations
 - Data size: 1KB per value
+- Each test performs 1000 operations
 - Tests include both SET and GET operations
 - All tests run with 3 iterations and 3 warmup counts
 
