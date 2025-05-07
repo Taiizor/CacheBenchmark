@@ -18,7 +18,7 @@ namespace CacheBenchmark
     //[RPlotExporter]
     [MemoryDiagnoser]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
-    [SimpleJob(RuntimeMoniker.Net90, launchCount: 3, warmupCount: 3, iterationCount: 3)]
+    [SimpleJob(RuntimeMoniker.HostProcess, launchCount: 3, warmupCount: 3, iterationCount: 3)]
     public class CacheBenchmarks
     {
         private string testValue;
