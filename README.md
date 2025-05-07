@@ -83,9 +83,9 @@ IterationCount=3  LaunchCount=3  WarmupCount=3
   - Garnet: 404.19 KB 
   - Dragonfly: 411.3 KB
 - GET operations use ~1.4 MB across all servers
-  - Redis: 1427.76 KB
-  - Dragonfly: 1433.59 KB
-  - Garnet: 1426.48 KB
+  - Redis: 1,427.76 KB
+  - Dragonfly: 1,433.59 KB
+  - Garnet: 1,426.48 KB
 
 ## License
 
