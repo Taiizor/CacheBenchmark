@@ -36,18 +36,22 @@ dotnet run -c Release
 ## Sample Benchmark Results
 
 ```plaintext
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.2605)
+BenchmarkDotNet v0.14.1-nightly.20250107.205, Windows 11 (10.0.26100.3915)
 11th Gen Intel Core i7-11800H 2.30GHz, 1 CPU, 16 logical and 8 physical cores
-.NET SDK 9.0.200-preview.0.24575.35
+.NET SDK 10.0.100-preview.3.25201.16
+  [Host]     : .NET 10.0.0 (10.0.25.17105), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  Job-QTZBJQ : .NET 10.0.0 (10.0.25.17105), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
 
-| Method         | Mean      | Error    | StdDev   | Allocated |
-|---------------|-----------|----------|-----------|-----------|
-| Redis-GET     | 490.6 ms  | 10.78 ms | 6.42 ms  | 1425.91 KB|
-| Redis-SET     | 531.1 ms  | 15.99 ms | 9.51 ms  | 403.16 KB |
-| Garnet-SET    | 553.0 ms  | 12.60 ms | 7.50 ms  | 404.19 KB |
-| Dragonfly-SET | 566.0 ms  | 10.81 ms | 6.43 ms  | 410.31 KB |
-| Dragonfly-GET | 566.6 ms  | 10.98 ms | 6.53 ms  | 1435.05 KB|
-| Garnet-GET    | 622.1 ms  | 10.64 ms | 6.33 ms  | 1419.39 KB|
+IterationCount=3  LaunchCount=3  WarmupCount=3
+
+| Method        | Mean     | Error    | StdDev   | Rank | Allocated  |
+|-------------- |---------:|---------:|---------:|-----:|-----------:|
+| Redis-GET     | 306.3 ms |  9.94 ms |  5.91 ms |    1 | 1427.76 KB |
+| Redis-SET     | 367.7 ms | 23.85 ms | 14.19 ms |    1 |  403.16 KB |
+| Garnet-SET    | 390.4 ms | 30.77 ms | 18.31 ms |    1 |  404.19 KB |
+| Dragonfly-SET | 404.5 ms | 18.82 ms | 11.20 ms |    1 |   411.3 KB |
+| Dragonfly-GET | 418.8 ms | 27.70 ms | 16.49 ms |    1 | 1433.59 KB |
+| Garnet-GET    | 445.4 ms | 15.15 ms |  9.01 ms |    1 | 1426.48 KB |
 ```
 
 ## Test Configuration
