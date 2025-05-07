@@ -65,22 +65,27 @@ IterationCount=3  LaunchCount=3  WarmupCount=3
 
 1. Redis shows the best overall performance:
    - Fastest GET operations (306.3 ms)
-   - Efficient SET operations (367.7 ms)
+   - Fastest SET operations (367.7 ms)
 
-2. Dragonfly shows consistent performance:
-   - Similar timing for both GET and SET (around 566 ms)
-   - Slightly higher memory allocation
+2. Garnet has:
+   - Fast SET operations (390.4 ms)
+   - Slower GET operations (445.4 ms)
 
-3. Garnet:
-   - Competitive SET performance (553.0 ms)
-   - Slower GET operations (622.1 ms)
-   - Efficient memory usage for SET operations
+3. Dragonfly shows:
+   - Competitive SET performance (404.5 ms)
+   - Good GET performance (418.8 ms)
+   - Most consistent performance between GET and SET operations
 
 ## Memory Usage
 
-- SET operations use ~400-410 KB
-- GET operations use ~1.4 MB
-- Memory usage is similar across all cache servers
+- SET operations use ~403-411 KB across all servers
+  - Redis: 403.16 KB
+  - Garnet: 404.19 KB 
+  - Dragonfly: 411.3 KB
+- GET operations use ~1.4 MB across all servers
+  - Redis: 1427.76 KB
+  - Dragonfly: 1433.59 KB
+  - Garnet: 1426.48 KB
 
 ## License
 
