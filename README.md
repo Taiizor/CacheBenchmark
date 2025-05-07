@@ -64,8 +64,8 @@ IterationCount=3  LaunchCount=3  WarmupCount=3
 ## Performance Summary
 
 1. Redis shows the best overall performance:
-   - Fastest GET operations (490.6 ms)
-   - Efficient SET operations (531.1 ms)
+   - Fastest GET operations (306.3 ms)
+   - Efficient SET operations (367.7 ms)
 
 2. Dragonfly shows consistent performance:
    - Similar timing for both GET and SET (around 566 ms)
