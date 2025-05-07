@@ -17,8 +17,8 @@ This project benchmarks the performance of different cache servers (Redis, Garne
 
 ## Project Structure
 
-- `CacheBenchmark/` - C# benchmark project using BenchmarkDotNet
 - `docker-compose.yml` - Docker configuration for cache servers
+- `CacheBenchmark/` - C# benchmark project using BenchmarkDotNet
 
 ## How to Run
 
