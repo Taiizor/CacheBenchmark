@@ -1,13 +1,13 @@
 # Cache Server Benchmark Project
 
-This project benchmarks the performance of different cache servers (Redis, Garnet, and Dragonfly) using Docker containers and C#.
+This project benchmarks the performance of different cache servers (Redis, Garnet and Dragonfly) using Docker containers and C#.
 
 ## Prerequisites
 
 - Windows OS
 - Docker Desktop
-- .NET SDK 9.0 or later
 - Docker Compose
+- .NET SDK 10.0 or later
 
 ## Cache Servers Tested
 
