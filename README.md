@@ -78,14 +78,14 @@ IterationCount=3  LaunchCount=3  WarmupCount=3
 
 ## Memory Usage
 
-- SET operations use ~403-411 KB across all servers
-  - Redis: 403.16 KB
-  - Garnet: 404.19 KB 
-  - Dragonfly: 411.3 KB
 - GET operations use ~1.4 MB across all servers
   - Redis: 1,427.76 KB
   - Garnet: 1,426.48 KB
   - Dragonfly: 1,433.59 KB
+- SET operations use ~403-411 KB across all servers
+  - Redis: 403.16 KB
+  - Garnet: 404.19 KB 
+  - Dragonfly: 411.3 KB
 
 ## License
 
